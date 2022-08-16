@@ -10,7 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat
-import com.arrkariz.tokoskill.features.kerjaan.presentation.ui.kerjaanScreen
+import com.arrkariz.tokoskill.features.kerjaan.presentation.ui.KerjaanScreen
 import com.arrkariz.tokoskill.ui.theme.TokoskillTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    kerjaanScreen()
+                    KerjaanScreen()
                 }
             }
         }
@@ -35,6 +35,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     TokoskillTheme {
-        kerjaanScreen()
+        KerjaanScreen()
     }
 }
