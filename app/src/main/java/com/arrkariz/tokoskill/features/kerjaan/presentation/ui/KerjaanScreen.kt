@@ -16,6 +16,7 @@ import com.google.accompanist.pager.rememberPagerState
 @OptIn(ExperimentalPagerApi::class)
 @Composable
 fun KerjaanScreen() {
+
     val configuration = LocalConfiguration.current
     val itemList = ArrayList<String>()
     itemList.add("https://i.imgur.com/hUA1nni.jpeg")
