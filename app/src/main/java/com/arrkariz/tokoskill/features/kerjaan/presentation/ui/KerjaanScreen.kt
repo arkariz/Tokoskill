@@ -15,19 +15,15 @@ import com.google.accompanist.pager.rememberPagerState
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
-fun kerjaanScreen() {
+fun KerjaanScreen() {
     val configuration = LocalConfiguration.current
     val itemList = ArrayList<String>()
     itemList.add("https://i.imgur.com/hUA1nni.jpeg")
     itemList.add("https://i.imgur.com/hUA1nni.jpeg")
     itemList.add("https://i.imgur.com/hUA1nni.jpeg")
 
-    val pagerState = rememberPagerState()
-
     Column() {
-        HorizontalPager(count = itemList.size, state = pagerState) {
-            Body(configuration = configuration, image = itemList[it])
-        }
+        Body(configuration = configuration, items = itemList)
         Box() {
             Spacer(
                 Modifier
